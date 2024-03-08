@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./productPage.css">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Product-Page</title>
+</head>
+<body>
+    <nav class="nav_bar">
+        <div class="nav_left">
+            <div class="nav_icon">
+                <a href="/">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/hrmtzvrr.json" trigger="loop" style="width:45px;height:45px">
+                    </lord-icon>
+                </a>
+            </div>
+            <div class="nav_search_bar">
+                <span class="search_icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/kkvxgpti.json" trigger="hover" style="width:25px;height:25px"></lord-icon>    
+                    </lord-icon>
+                </span>
+                <input class="nav_search" type="search" placeholder="Search..." />
+            </div>
+        </div>
+        <div class="nav_right">
+           
+            <div class="nav_right">
+                <!-- <a href="./pages/seeAllProducts/seeAllProducts.html" style="color: aliceblue;"> SHOP ALL</a>
+                <div class="nav_profile">
+                    <a href="/">
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/kthelypq.json" trigger="hover" colors="primary:#ffffff" style="width:35px;height:35px"></lord-icon> </lord-icon>
+                    </a>
+                        
+                </div>
+                <div class="nav_cart">
+                  <a href="">CART</a>
+                </div> -->
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="./pages/seeAllProducts/seeAllProducts.html"></a>SHOP-ALL</li>
+                    <li><a href="">PROFILE</a></li>
+                    <li><a class="show_cart">CART</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="products_cart_box">
+        <!-- products box -->
+          <div id="productList" class="product-list"></div>
+         <!-- cart box -->
+         <div class="cart_container_wrap">
+            <div class="cart_title_btn_box">
+                <h1 style="text-align: center;">Cart Items</h1>
+                <button class="back_to_sp">Back</button>
+            </div>
+            <div id="cart_items_container">
+                
+            </div>
+            <br>
+            <div class="cart_total_price">
+                <h1>Total:    <span class="cart_total_value" id="cart_price_el"></span></h1>
+                <button>Proceed</button>  
+            </div>
+         </div>
+    </div>
+    
+    <br>
+    <footer class="footer">
+        <div class="footer_wrap">
+            <div class="footer_card">
+                <ul>
+                    <li><h2>SHOP</h2></li>
+                    <li><p>Shop All</p></li>
+                    <li><p>Hair Styling</p></li>
+                    <li><p>Color Protection</p></li>
+                    <li><p>Curl Care</p></li>
+                </ul>
+            </div>
+            <div class="footer_card">
+                <ul>
+                    <li><h2>ABOUT</h2></li>
+                    <li><p>About Us</p></li>
+                    <li><p>Journal</p></li>
+                    <li><p>Join Our Team</p></li>
+                    <li><p>Join And Earn</p></li>
+                </ul>
+            </div>
+            <div class="footer_card">
+                <ul>
+                    <li><h2>NEED HELP</h2></li>
+                    <li><p>Shopping</p></li>
+                    <li><p>FAQ</p></li>
+                    <li><p>Rewards</p></li>
+                </ul>
+            </div>
+            <div class="footer_card">
+                <h2>Contact Us</h2>
+                <a href="">
+                    <img src="../../footer_img/footerimg1.svg" alt="footer_logo">
+                    <p>1111-222-333(Mondat-Friday 10pm-5pm)</p>
+                </a>
+                <a href="">
+                    <img src="../../footer_img/footerimg2.svg" alt="footer_logo">
+                    <p>Write To Us</p>
+                </a>
+                <a href="">
+                    <img src="../../footer_img/footerimg3.svg" alt="footer_logo">
+                    <p>DSC-208, Bangalore,Karnataka-566969 </p>
+                </a>
+            </div>
+        </div>
+        <div class="footer_connect">
+            <a href=""><img src="../../footer_img/footer_link/footerLink1.svg" alt="footer_link"></a>
+            <a href=""><img src="../../footer_img/footer_link/footerLink2.svg" alt="footer_link"></a>
+            <a href=""><img src="../../footer_img/footer_link/footerLink3.svg" alt="footer_link"></a>
+            <a href=""><img src="../../footer_img/footer_link/footerLink4.svg" alt="footer_link"></a>   
+        </div>
+    </footer>
+
+    <script src="./product.js"></script>
+</body>
+</html>
