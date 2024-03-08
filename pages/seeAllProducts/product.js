@@ -177,6 +177,7 @@ showButtonCart.addEventListener('click', () => {
 // total price
 
 let totalPrice=0;
+
 function updateTotalPrice() {
     const totalPriceEl = document.getElementById('cart_price_el');
     if (totalPriceEl != null) {
@@ -190,5 +191,19 @@ function updateTotalPrice() {
 
 //   proceed button functionality 
 
-const cartItemsProceeder = document.querySelector('.product-list');
+const proceedButton = document.querySelector('.cart_total_price button');
+const cartItemsContainer = document.getElementById('cart_items_container');
+const cartTotalValue = document.querySelector('.cart_total_value');
+
+proceedButton.addEventListener('click', () => {
+    if (cartItemsContainer.childElementCount === 0) {
+      alert('Fill the cart');
+    } else {
+      while (cartItemsContainer.firstChild) {
+        cartItemsContainer.removeChild(cartItemsContainer.firstChild);
+      }
+      cartTotalValue.innerHTML='0';
+      alert('Order is placed');
+    }
+  });
 
